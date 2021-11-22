@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Recommended Movies</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../static/table_static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/table_static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/table_static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/table_static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/table_static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/table_static/vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/table_static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/table_static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+					<div class="table">
+						
+						<div class="row header">
+							<div class="cell">
+								Sr. No.
+							</div>
+							<div class="cell">
+								Movie Title
+							</div>
+						</div>
+
+						{%for movie in movieList%}
+						<div class="row">
+							<div class="cell" data-title="Sr. No.">
+								{{ loop.index }}
+							</div>
+							<div class="cell" data-title="Movie Title">
+								{{movie}}
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+<!--===============================================================================================-->	
+	<script src="../static/table_static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/table_static/vendor/bootstrap/js/popper.js"></script>
+	<script src="../static/table_static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/table_static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/table_static/js/main.js"></script>
+
+</body>
+</html>
